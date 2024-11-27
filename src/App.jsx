@@ -50,7 +50,7 @@ const App = () => {
     } else {
       try {
         // Send form data to backend (API)
-        const response = await axios.post("http://localhost:5000/submit-form", Values);
+        const response = await axios.post("http://localhost:5001/submit-form", Values);
         alert(response.data.message); // Show success message
         setValues({
           name: "",
